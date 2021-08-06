@@ -48,6 +48,105 @@ img{
 
 }
 
+#personal a{
+    border-radius: 7px;
+    margin: 5px;
+    padding: 8px 0;
+}
+
+#personal li{
+    margin: 14px 0;
+}
+
+#skills li{
+    margin: 14px 0;
+}
+
+#web-skills-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.external-link-github i{
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-symfony i{
+    background-color: #fff;
+    color: #1A171B;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-linkedin i{
+    background-color: #0e76a8;
+    color: white;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-html i{
+    background-color: #e34c26;
+    color: #fff;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-css i{
+    background-color: #264de4;
+    color: #fff;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-js i{
+    background-color: #000;
+    color: #EFD81D;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-php i{
+    background-color: #8892BF;
+    color: #22242F;
+    border-radius: 5px; 
+    padding: 7px;
+
+}
+
+.external-link-bootstrap i{
+    background-color: #7952B3;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+
+}
+
+.external-link-nodejs i{
+    background-color: #333333;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+
+}
+
+.external-link-python i{
+    background-color: #1E415E;
+    color: #FFE15F;
+    border-radius: 5px;
+    padding: 7px;
+
+}
+
 #education{
     
 }
