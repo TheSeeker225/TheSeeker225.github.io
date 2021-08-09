@@ -164,3 +164,27 @@ img{
 #skills{
     
 }
+
+/* Login page styles */
+
+#login-body{
+    background-image: url(../images/mur-login.jpg);
+}
+
+#login-form{
+    border: 3px solid #000;
+    width: 1000px;
+    margin: 45px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#login-by-extern{
+    width: 500px;
+    height: 300px;
+}
+
+#login-normal{
+    width: 500px;
+    height: 300px;
+}
