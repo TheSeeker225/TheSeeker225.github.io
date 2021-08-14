@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Connexion | Seeker225 AIJNWJ </title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./fontawesome-free/css/all.min.css">
 </head>
 <body id="login-body">
 
@@ -27,17 +26,21 @@
             </a>
 
         </div>
-
+ 
         <div id="login-normal">
 
             <h3>Login Form</h3>
 
-            <div>
-                <input type="email" name="mail" class="input-style" placeholder="Votre Mail">
+            <div class="input-style">
+                <input type="email" name="mail" required>
+                <label for="mail">Votre mail</label>
             </div>
 
-            <div>
-                <input type="password" name="motpasse" class="input-style" placeholder="Votre Mot De Passe">
+
+
+            <div class="input-style">
+                <input type="password" name="motpasse" required>
+                <label for="motpasse">Votre mot de passe</label>
             </div>
 
             <input type="submit" value="Login">
