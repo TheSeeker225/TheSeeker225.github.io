@@ -11,6 +11,10 @@
 
     <form id="login-form">
 
+        <p id="message-de-confirmation">
+
+        </p>
+
         <div id="login-by-extern">
 
             <h3>Login</h3>
@@ -32,22 +36,25 @@
             <h3>Login Form</h3>
 
             <div class="input-style">
-                <input type="email" name="mail" required>
+                <input type="email" name="mail" id="email" required>
                 <label for="mail">Votre mail</label>
             </div>
 
-
-
             <div class="input-style">
-                <input type="password" name="motpasse" required>
+                <input type="password" name="motpasse" id="motpasse" required>
                 <label for="motpasse">Votre mot de passe</label>
             </div>
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" onclick="direBonjour()">
+
+            <p>
+                Nouveau ?, veuillez vous dirigez <a href="./signup.php" ></a>
+            </p>
 
         </div>
 
     </form>
     
+    <script src="./js/main.js"></script> 
 </body>
 </html>
