@@ -1,31 +1,32 @@
 function verifierLeFormulaire() {
     /* Cette fonction va m'aider à vérifier 
        que tous les champs du formulaire sont
-       correctement renseignés */
+       correctement renseignés  */
 
 
-    /* Enregistrement des champs du formulaire */
-    let champDeSaisieDeEmail = document.getElementById('email');
-    let champDeSaisieDeMotPasse = document.getElementById('motpasse');
-    
+    // Déclaration de variables
+    let contenuChampEmail = document.getElementById('email').value;
+    let contenuChampMotdePasse = document.getElementById('motpasse').value;
+
     /* Enregistrement de l'espace d'affichage */
     let espaceDaffichageDuMessage = document.querySelector('#message-confirmation');
-    
-    if (champDeSaisieDeEmail.length > 16 && champDeSaisieDeMotPasse.length > 8) {
 
-        espaceDaffichageDuMessage.innerText = "Bravo ! Vous avez correctement rempli les champs du formulaire.";
+    if (contenuChampEmail != '' && contenuChampMotdePasse != '') {
 
+        if (contenuChampMotdePasse.length > 8 && contenuChampMotdePasse.length < 16) {
+            
+            espaceDaffichageDuMessage.value = "Bravo ! Vous avez correctement rempli les champs du formulaire.";
+
+        } else {
+            
+            espaceDaffichageDuMessage.value = "Ooohps ! Merci de vérifier que votre mot de passe est entre 8 et 16 caractères";
+
+        }
+        
     } else {
-
-        espaceDaffichageDuMessage.innerText = "Ooohps ! Veuillez vérifier que les champs du formulaire sont correctement remplis !";
+        
+        espaceDaffichageDuMessage.value = "Zuut ! Veuillez vérifier que tous les champs sont correctement remplis !";
 
     }
-    
-}
 
-function direBonjour(){
-    
-    var message = document.querySelector('#message-confirmation');
-
-    message.innerText = "Bravo ! Hello World !";
 }
