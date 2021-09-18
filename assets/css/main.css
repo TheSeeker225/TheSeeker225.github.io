@@ -85,6 +85,10 @@
 	font-weight: normal;
 }
 
+.text-white{
+	color: #fff;
+}
+
 /* ===================================================================
  *  02. base style overrides - (_document-setup)
  *
@@ -838,7 +842,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #030303;
+	background: #081a52;
 }
 
 button.full-width,
@@ -1628,8 +1632,8 @@ header .header-logo a {
 	}
 
 	header .header-logo a {
-		width: 54px;
-		height: 54px;
+		width: 60px;
+		height: 60px;
 		background-size: 54px 54px;
 	}
 
@@ -1647,10 +1651,8 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #home {
-	background: #151515;
 	width: 100%;
 	height: 100%;
-	/*background-image: url(../images/intro-bg.jpg);*/
 	background-color: #071C60;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1940,7 +1942,7 @@ header .header-logo a {
 #about {
 	position: relative;
 	padding: 10.8rem 0 10.8rem;
-	background-color: #FFFFFF;
+	background-color: #F8810D;
 	min-height: 700px;
 }
 
@@ -2017,6 +2019,8 @@ header .header-logo a {
 .about-services {
 	padding-left: 9rem;
 	position: relative;
+	background-color: #fff;
+	padding: 16px;
 }
 
 .about-services p.lead {
@@ -2705,7 +2709,7 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #stats {
-	background-color: #111111;
+	background-color: #071C60;
 	position: relative;
 	padding: 6rem 0 6rem;
 }
@@ -2720,7 +2724,7 @@ header .header-logo a {
 }
 
 #stats .stat .icon-part {
-	color: #333;
+	color: rgba(94, 147, 207, 0.74);
 }
 
 #stats .stat .icon-part i {
@@ -2796,7 +2800,7 @@ header .header-logo a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: .7;
+	opacity: .9;
 	background-color: #000000;
 }
 
@@ -3140,7 +3144,7 @@ footer .footer-social li:last-child {
 	width: 60px;
 	line-height: 63px;
 	text-align: center;
-	background-color: #000000;
+	background-color: #071C60;
 	color: #888;
 	text-align: center;
 	text-transform: uppercase;
@@ -3157,13 +3161,13 @@ footer .footer-social li:last-child {
 }
 
 #go-top a:visited {
-	background: #000000;
+	background: #071C60;
 	color: #888;
 }
 
 #go-top a:hover,
 #go-top a:focus {
-	background: #000000;
+	background: #071C60;
 	color: #FFFFFF;
 }
 
