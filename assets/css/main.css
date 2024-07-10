@@ -29,35 +29,21 @@
  *  01. webfonts and iconfonts - (_document-setup)
  *
  * ------------------------------------------------------------------- */
-@import url("../../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+@import url("font-awesome/css/font-awesome.min.css");
 @import url("windows10/windows10.css");
 
 /* montserrat */
 @font-face {
 	font-family: "montserrat-regular";
-	src: url("../../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), 
-	     url("../../fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+	src: url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), 
+	     url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "montserrat-bold";
-	src: url("../../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), 
-	     url("../../fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
-	font-style: normal;
-	font-weight: normal;
-}
-
-/* montserrat */
-@font-face {
-	font-family: "Lato-Regular";
-	src: url("../../fonts/Lato/Lato-Regular.ttf") format("ttf");
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "Lato-Bold";
-	src: url("../../fonts/Lato/Lato-Bold.ttf") format("ttf");
+	src: url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), 
+	     url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -65,28 +51,24 @@
 /* libre baskerville */
 @font-face {
 	font-family: "librebaskerville-regular";
-	src: url("../../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), 
-	     url("../../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
+	src: url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), 
+	     url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "librebaskerville-italic";
-	src: url("../../fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"), 
-	     url("../../fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
+	src: url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"), 
+	     url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "librebaskerville-bold";
-	src: url("../../fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"), 
-	     url("../../fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
+	src: url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"), 
+	     url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
-}
-
-.text-white{
-	color: #fff;
 }
 
 /* ===================================================================
@@ -150,7 +132,7 @@ a:focus {
  *
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family:, "montserrat-bold", sans-serif;
+	font-family: "montserrat-bold", sans-serif;
 	color: #151515;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -842,7 +824,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #081a52;
+	background: #030303;
 }
 
 button.full-width,
@@ -1252,7 +1234,7 @@ input::-moz-focus-inner {
 	margin-bottom: 1.5rem;
 }
 
-.section-intro h2 {
+.section-intro h1 {
 	font-family: "librebaskerville-bold", serif;
 	font-size: 4.8rem;
 	line-height: 1.375;
@@ -1632,8 +1614,8 @@ header .header-logo a {
 	}
 
 	header .header-logo a {
-		width: 60px;
-		height: 60px;
+		width: 54px;
+		height: 54px;
 		background-size: 54px 54px;
 	}
 
@@ -1651,8 +1633,10 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #home {
+	background: #151515;
 	width: 100%;
 	height: 100%;
+	/*background-image: url(../images/intro-bg.jpg);*/
 	background-color: #071C60;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1942,7 +1926,7 @@ header .header-logo a {
 #about {
 	position: relative;
 	padding: 10.8rem 0 10.8rem;
-	background-color: #F8810D;
+	background-color: #FFFFFF;
 	min-height: 700px;
 }
 
@@ -1955,7 +1939,7 @@ header .header-logo a {
 	margin: 0 0 0 .3rem;
 }
 
-#about h2 {
+#about h1 {
 	font-family: "librebaskerville-bold", serif;
 	font-size: 3.3rem;
 	line-height: 1.455;
@@ -2019,8 +2003,6 @@ header .header-logo a {
 .about-services {
 	padding-left: 9rem;
 	position: relative;
-	background-color: #fff;
-	padding: 16px;
 }
 
 .about-services p.lead {
@@ -2709,7 +2691,7 @@ header .header-logo a {
  *
  * ------------------------------------------------------------------- */
 #stats {
-	background-color: #071C60;
+	background-color: #020921;
 	position: relative;
 	padding: 6rem 0 6rem;
 }
@@ -2724,7 +2706,7 @@ header .header-logo a {
 }
 
 #stats .stat .icon-part {
-	color: rgba(94, 147, 207, 0.74);
+	color: #333;
 }
 
 #stats .stat .icon-part i {
@@ -2800,7 +2782,7 @@ header .header-logo a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	opacity: .9;
+	opacity: .7;
 	background-color: #000000;
 }
 
@@ -3144,7 +3126,7 @@ footer .footer-social li:last-child {
 	width: 60px;
 	line-height: 63px;
 	text-align: center;
-	background-color: #071C60;
+	background-color: #000000;
 	color: #888;
 	text-align: center;
 	text-transform: uppercase;
@@ -3161,13 +3143,13 @@ footer .footer-social li:last-child {
 }
 
 #go-top a:visited {
-	background: #071C60;
+	background: #000000;
 	color: #888;
 }
 
 #go-top a:hover,
 #go-top a:focus {
-	background: #071C60;
+	background: #000000;
 	color: #FFFFFF;
 }
 
